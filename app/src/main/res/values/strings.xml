@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">危运通托运</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_bill">AddBillActivity</string>
+    <string name="title_activity_bill_info">BillInfoActivity</string>
+
+</resources>

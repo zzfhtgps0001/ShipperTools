@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tittle_main_text">#ffffff</color>
+
+    <dimen name="txtsize_subhead">16sp</dimen>
+    <dimen name="txtsize_title">20sp</dimen>
+
+    <style name="TextViewTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txtsize_title</item>
+    </style>
+</resources>

@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.zzfht.shippertools.fragment.AddBillFragment">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_bill_scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableTop="@drawable/car_sys"
+            android:padding="5dp"
+            android:text="扫一扫"
+            android:textColor="@color/main_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/txt_gray" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:padding="20dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="车牌号："
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/add_bill_vehicle"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/main_color" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="驾驶员："
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+                <com.zzfht.shippertools.spinner.ClickControlledSpinner
+                    android:id="@+id/spinner_driver"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="押运员："
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+                <com.zzfht.shippertools.spinner.ClickControlledSpinner
+                    android:id="@+id/spinner_supercargo"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="目的地："
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/add_bill_destination"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="点此选择目的地"
+                    android:textSize="18sp"
+                    android:textColor="@color/main_color"
+                     />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="实载量："
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/add_bill_et_weight"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/main_color" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="收货方："
+                    android:textColor="@color/main_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/add_bill_company"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/main_color" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/add_bill_btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:text="保存"
+                android:textColor="@color/white" />
+        </TableLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/vMasker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:visibility="gone" />
+
+</LinearLayout>

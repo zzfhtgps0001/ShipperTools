@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzfht.shippertools.fragment.BillInfoSafeFragment">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特别警示"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:id="@+id/emerg_special_warnings"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="危险性"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/emerg_danger"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运输安全"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:id="@+id/emerg_transport_security"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="急救措施"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:id="@+id/emerg_first_aid"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灭火措施"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:id="@+id/emerg_firefighting_method"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="泄漏应急措施"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:id="@+id/emerg_release_measurces"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康危害"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/emerg_health_hazards"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活性反应"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="5dp"
+            android:id="@+id/emerg_reactivity"
+            android:textSize="18sp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

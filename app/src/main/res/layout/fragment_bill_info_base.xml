@@ -1,0 +1,497 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzfht.shippertools.fragment.BillInfoBaseFragment">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="货物信息"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="危险品名称："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/bill_info_medium"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="核载量(千克)："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/bill_info_appove"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="实载量(千克)："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/bill_info_actual"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="收货方名称："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/bill_info_receiver"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="目的地："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/bill_info_destination"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="托运日期："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:editable="false"
+                    android:focusable="false"
+                    android:id="@+id/bill_info_shipperDate"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="承运方信息"
+            android:textSize="20sp" />
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="单位名称："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_shipper"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="经营许可证号："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_license"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="联系电话："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_tel"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="车辆信息"
+            android:textSize="20sp" />
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_bottom_corner_no_top_line"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="牵引车车牌号："
+                    android:textColor="@color/main_color" />
+                <EditText
+                    android:id="@+id/bill_info_vehicleFlapper"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="道路运输证号："
+                    android:textColor="@color/main_color" />
+                <EditText
+                    android:id="@+id/bill_info_vehicleTransportNo"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="挂车车牌号："
+                    android:textColor="@color/main_color"
+                    android:layout_column="0" />
+
+                <EditText
+                    android:id="@+id/bill_info_trailerFlapper"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="道路运输证号："
+                    android:textColor="@color/main_color"
+                    android:layout_column="0" />
+
+                <EditText
+                    android:id="@+id/bill_info_trailerTransportNo"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="驾驶员姓名："
+                    android:textColor="@color/main_color"
+                    android:layout_column="0" />
+
+                <EditText
+                    android:id="@+id/bill_info_driverName"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="驾驶证号："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_drivingnumber"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="从业资格证号："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_driverCertificate"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="联系电话："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_driverPhone"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="押运员姓名："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_supercargoName"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="身份证号："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_idnumber"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="从业资格证号："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_supercargoCertificate"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="联系电话："
+                    android:textColor="@color/main_color" />
+
+                <EditText
+                    android:id="@+id/bill_info_supercargoPhone"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                     />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

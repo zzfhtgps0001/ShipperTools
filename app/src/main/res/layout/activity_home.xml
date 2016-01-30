@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzfht.shippertools.activity.HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_content"
+        android:layout_weight="1"></FrameLayout>
+    <TextView
+        android:background="@color/txt_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+    <FrameLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+
+            <RadioButton
+                style="@style/MMTabButton"
+                android:text="首页"
+                android:drawableTop="@drawable/home"
+                android:checked="true"
+                android:id="@+id/rb_home"
+                android:layout_gravity="bottom" />
+
+            <RadioButton
+                style="@style/MMTabButton"
+                android:drawableTop="@drawable/lan"
+                android:text="消息"
+                android:id="@+id/rb_meassage" />
+
+            <RadioButton
+                style="@style/MMTabButton"
+                android:drawableTop="@drawable/mine"
+                android:text="个人中心"
+                android:id="@+id/rb_mine" />
+        </RadioGroup>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/main_btn_msg"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+            <Button
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color" >#0088D8</color>
+
+    <!--<string name="url">http://192.168.1.78:8081/ewaybillserver/</string>-->
+    <string name="url">http://218.29.139.150:8080/ewaybillserver/</string>
+    <string name="qrcodeUrl">http://safe.hn96520.com/</string>
+
+    <string name="baidu_push_key">eLcPvt98vOfuKrEb1HVHgmHM</string>
+    <string name="package_name">www.zzfht.shippertools</string>
+</resources>

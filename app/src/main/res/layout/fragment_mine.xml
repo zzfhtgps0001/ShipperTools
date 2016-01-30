@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzfht.shippertools.fragment.MineFragment">
+    <include layout="@layout/include_titlebar" />
+    <LinearLayout
+        android:id="@+id/log_out"
+        android:layout_marginTop="1dp"
+        android:background="@color/main_color"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:src="@drawable/head_2x"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="退出"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TableLayout
+
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_margin="10dp"
+            android:layout_height="50dp">
+            <ImageView android:src="@drawable/myqy"
+                android:layout_gravity="left|center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:text="企业名称"
+                android:textSize="20sp"
+                android:textColor="@color/txt_gray"
+                android:layout_weight="1" />
+        </TableRow>
+        <TextView
+            android:background="@color/txt_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"/>
+
+        <TableRow
+            android:layout_margin="10dp"
+            android:layout_height="50dp">
+            <ImageView android:src="@drawable/mylocation"
+                android:layout_gravity="left|center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:text="我的位置"
+                android:textSize="20sp"
+                android:textColor="@color/txt_gray"
+                android:layout_weight="1" />
+        </TableRow>
+        <TextView
+            android:background="@color/txt_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"/>
+
+    </TableLayout>
+
+</LinearLayout>

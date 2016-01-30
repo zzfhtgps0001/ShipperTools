@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzfht.shippertools.activity.BillInfoActivity">
+
+    <include layout="@layout/include_titlebar" />
+    <RadioGroup
+        android:id="@+id/bill_info_rg"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/bill_info_rb_left"
+            style="@style/MMTabButton"
+            android:checked="true"
+            android:text="基本信息"
+            android:textSize="20sp"
+            android:textColor="@drawable/txtcolor_tab_sel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="1dp"
+            android:background="@color/white"
+            android:layout_height="fill_parent" />
+        <RadioButton
+            android:id="@+id/bill_info_rb_right"
+            style="@style/MMTabButton"
+            android:text="运输安全"
+            android:textSize="20sp"
+            android:textColor="@drawable/txtcolor_tab_sel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+    <fragment
+        android:id="@+id/bill_info_base_frag"
+        android:layout_weight="1"
+        android:name="com.zzfht.shippertools.fragment.BillInfoBaseFragment"
+        android:layout_marginBottom="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <fragment
+        android:id="@+id/bill_info_safe_frag"
+        android:layout_weight="1"
+        android:name="com.zzfht.shippertools.fragment.BillInfoSafeFragment"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bill_info_btn_push"
+        android:text="未发车"
+        android:clickable="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/main_color"
+        android:layout_marginBottom="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
